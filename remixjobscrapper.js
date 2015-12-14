@@ -42,7 +42,6 @@ router.route('/jobs')
     if(req.body.description)job.description = req.body.description;
     if(req.body.contract)job.contract = req.body.contract;
     if(req.body.date)job.date = new Date(req.body.date);
-    //job.tags.push('gey');job.tags.push('yo');job.tags.push('lel');
     fillMyTags(['yolo','swagg','tracks'],job.tags);
 
     job.save(function(err){
@@ -100,7 +99,7 @@ router.route('/jobs/:Job_id')
 //ROUTES FOR REMIXJOBSCRAPPING
 router.route('/scrap').
   get(remixjobs.scrapAllJobs);
-  
+
 //REGISTER ROUTES
 app.use('/api',router);
 app.listen(8080);
