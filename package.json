@@ -1,0 +1,31 @@
+{
+  "name": "remixjobs",
+  "version": "1.0.0",
+  "description": "remixjobs webscrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abenc/remixjobs"
+  },
+  "keywords": [
+    "remixjobs"
+  ],
+  "author": "Anir Ben Chabane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abenc/remixjobs/issues"
+  },
+  "homepage": "https://github.com/abenc/remixjobs",
+  "dependencies":{
+   "express":"latest",
+   "body-parser":"latest",
+   "ejs":"latest",
+   "cookie-session":"latest",
+   "scrap":"latest",
+   "request":"latest",
+   "mangoose":"latest"
+ }
+}
